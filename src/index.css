@@ -1,0 +1,272 @@
+* {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: default;
+}
+
+:root {
+    --theme-color: #0466C8;
+    --color-bg: #F7F8FA;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.scaffold {
+    display: flex;
+}
+
+.unselndrg {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.menu {
+    width: 225px;
+    height: 100vh;
+    background: #F7F8FA;
+    border-right: 2px solid rgba(69, 102, 134, 0.08);
+    flex: 2;
+}
+
+.container {
+    flex: 8;
+    background: var(--color-bg);
+    z-index: -2;
+}
+
+.logo {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    object-fit: contain;
+}
+
+.logo-text {
+    /* School-Info Dashboard */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    /* or 136% */
+    color: #4B4B4B;
+    padding-left: 15px;
+}
+
+.blue-bg {
+    background: var(--theme-color) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    z-index: -1;
+}
+
+.menu__icon {
+    width: 20px;
+    padding-left: 30px;
+    opacity: 0.8;
+}
+
+.menu__one {
+    height: 48px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.menu__active {
+    background-color: white;
+    width: 90%;
+    border-left: 3px solid var(--theme-color);
+    border-radius: 0 5px 5px 0;
+    z-index: 100;
+}
+
+.menu__text {
+    padding-left: 15px;
+    color: #4B4B4B;
+}
+
+.pos-btm {
+    position: fixed;
+    bottom: 20px;
+    margin: 0;
+    height: 0;
+}
+
+
+/* .col-text-content {
+    background: rgba(218, 181, 181, 0.7);
+    opacity: 0.8;
+} */
+
+
+/* .col-menu-inactive {
+    color: #4B4B4B;
+} */
+
+
+/* Line 8 */
+
+
+/* Line 12 */
+
+
+/* Content Wrapper Start */
+
+.wrapper {
+    height: 30vh;
+    padding: 25px 50px;
+    display: flex;
+    align-content: center;
+}
+
+.wrapper__left,
+.wrapper__right {
+    flex: 5;
+}
+
+.wrapper__right {
+    margin-left: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+    padding: 25px 50px;
+}
+
+.header__account {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F7F8FA;
+    margin-left: 15px;
+}
+
+.header__icon {
+    margin-left: 22px;
+}
+
+.title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #F7F8FA;
+    margin-right: 40px;
+}
+
+.col-bg-grey {
+    color: #F7F8FA;
+}
+
+.breadcrumb {
+    /* Home - Dashboard */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #F7F8FA;
+    margin-left: 15px;
+}
+
+.header_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+/* Feed */
+
+.feed__container {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.feed__title {
+    /* The School is Changing. */
+    /* heading */
+    line-height: 19px;
+    color: var(--theme-color);
+    line-height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 1.6rem;
+}
+
+.feed__time {
+    font-size: 10px;
+    line-height: 14px;
+    /* text-muted */
+    color: #6D6D6D;
+    min-width: 70px;
+    text-align: end;
+}
+
+.feed {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.feed__desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    opacity: 0.8;
+    /* WRAPPING WITH ... */
+    line-height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 3.2rem;
+}
+
+.calender {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.calender__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calender__month {
+    padding: 0 35px;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0466C8;
+}
